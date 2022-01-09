@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/sign.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/home.css">
+
+    <title>Document</title>
+</head>
+<body style="background-image :url(/public/img/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg)">
+    <div class='headers'>
+        <header>
+            <img src='/public/img/school_logo.gif'>
+            <p>Universty of Nigeria Nsukka</p>
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li style="background-color: rgb(5, 65, 5); border: 2px solid white; ">
+                            <a href="/new" style="color: rgb(255, 255, 255) ;"> Create Account</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="signinbox"  >  
+        <img src='/public/img/school_logo.gif'>
+        <p>Universty of Nigeria Nsukka staff portal</p>
+        
+        <h2>Create your account now</h2>
+          <form action="/new/post" method='POST'>
+                <!-- <p>username</p> -->
+              <input type="text" name="username" placeholder="Enter your username">
+              <!-- <p>password</p> -->
+              <br>
+
+              <input type="password" name="password" placeholder="Enter your password">
+              <br>
+              <%errors%> 
+
+              <input type="submit"  value=Continue>
+          </form>
+          <p class="mod">Already have an account click <a href="/">here</a></p>
+
+    </div>  
+</body>
+</html>

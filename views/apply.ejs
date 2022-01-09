@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/public/css/Dashboard.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class='headers'>
+    <header>
+      <img src='/public/img/school_logo.gif'>
+      <p>Universty of Nigeria Nsukka staff portal</p>
+      <div class="name">
+        <img src='/public/img/school_logo.gif'>
+        <p>Jennifer</p>
+
+      </div>
+    </header>
+  </div>
+  <div class="nav-bar">
+    <nav>
+      <ul>
+        <li>
+          <a href="profile.html">Profile</a>
+        </li>
+        <li class="currentL">
+          <a href="apply.html"> Apply For Leave</a>
+        </li>
+        <li>
+          <a href="track.html"> Track Leave</a>
+        </li>
+        <li>
+
+
+          <a href="Login.html"> Log out</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="apply">
+    <h1>Apply for leave here</h1>
+    <form>
+      <p>
+        State the reason why you are requesting for the leave
+      </p>
+      <textarea name="reason" required></textarea>
+
+      <p> <label for="from">From:</label></p>
+      <input type="date" data-date-inline-picker="true" id="from" name="leave_from" />
+
+      <p> <label for="to">To:</label></p>
+
+      <input type="date" data-date-inline-picker="true" id="to" name="leave_to" />
+      <br>
+      <br>
+      <input type="submit" value="submit">
+    </form>
+
+  </div>
+
+</body>
+
+</html>

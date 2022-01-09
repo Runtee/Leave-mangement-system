@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url('/img/cdc-uN8TV9Pw2ik-unsplash.jpg');
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    font-family:'DejaVu Sans Condensed';
+    font-weight:normal;
+
+    /* background-color: rgb(223, 171, 103); */
+}
+h1{
+    color:rgb(22, 94, 8);
+    /* font-size: 20px; */
+
+}
+
+.headers img{
+width: 100px;
+height: 100px;
+}
+.signinbox{
+    width: 320px;
+    height: 420px;
+    border-radius: 5px;
+    background-color: rgba(5, 49, 1, 0.377);
+    ;
+    margin: 100px;
+    margin-left: 500px;
+    border: 2px solid rgb(22, 94, 8);
+    padding: 10px;
+}
+.signinbox form{
+    padding: 10px;
+}
+.signinbox img{
+    width: 50px; 
+    height:50px;
+/* position:absolute; */
+}
+.he{
+    margin-top: -70px;
+    margin-left: 90px;
+    color:rgb(22, 94, 8);
+
+/* font-family:'Dyuthi'; */
+font-size: 20px;
+font-weight:normal;
+}
+.signinbox h2{
+/* text-align: center; */
+margin-top: 20px;
+margin-bottom: -2px;
+margin-left: 10px;
+font-size: 15px;
+font-weight:normal;
+
+
+}
+.signinbox select{
+    width: 100%;
+    padding: 8px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+    }
+.signinbox input{
+width: 92%;
+margin-top: 20px;
+padding: 7px;
+}
+.signinbox input[type='submit']{
+    width: 97.2%;
+    padding: 8px;
+    background-color: rgb(22, 94, 8);
+    border: rgb(22, 94, 8)
+}
+.signinbox p{
+font-weight: 500;
+font-size: 18px;
+}
+.mod{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+.mod a{
+    text-align: center;
+    color: rgb(64, 241, 28);
+    font-weight:normal;
+
+}
+.forget{
+    margin-right: 15px;
+ text-align: right;   
+ font-weight:normal;
+
+}
+.forget a{
+text-decoration: none;
+color:rgb(22, 94, 8);
+font-weight:normal;
+
+}

@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'DejaVu Sans Condensed';
+font-size: 20px;
+/* font-weight:bolder; */
+width: 100%;
+
+    /* background-color: rgb(223, 171, 103); */
+}
+
+.headers{
+    /* width: 100%; */
+    height: 70px;
+    border-bottom: 2px solid rgb(237, 245, 244);
+    background-color: white;
+    padding: 10px;
+
+}
+.headers img{
+    padding: 0%;
+    margin: 0%;
+    margin-top: -30px;
+width: 70px;
+position: absolute;
+height: 70px;
+}
+
+.headers p{
+color: rgb(22, 94, 8);
+margin-left: 90px;
+font-family:'DejaVu Sans Condensed';
+font-size: 30px;
+font-weight:bolder;
+}
+.headers h3{
+    color: cornsilk;
+    /* margin-left: 250px; */
+    text-align: center;
+
+
+}
+.nav-bar{
+    height: 700px;
+    width: 250px;
+    background-color: rgb(57, 150, 39) ;
+    margin-top: -21px;
+    padding: relative;
+}
+.nav-bar a{
+ text-decoration: none;
+ color: white;
+
+}
+.nav-bar ul{
+    padding: 5%;
+    /* list-style: none; */
+   
+   }
+.nav-bar li{
+    padding: 5%;
+    list-style: none;
+    border-bottom: 2px solid white;
+    /* background-color: white; */
+}
+
+.nav-bar a:hover {
+border-bottom: 2px solid white;
+}
+.name img{
+float: left;
+width: 50px;
+height: 60px;
+border-radius: 30px;
+margin-left: 1100px;
+margin-top: -80px;
+position: absolute;
+}
+.name p{
+    position: absolute;
+    margin-left: 1160px;
+    margin-top: -70px;
+    font-weight:normal;
+    font-size: 18px;
+    font-family:Verdana;
+
+}
+
+
+.currentL {
+    background-color: rgba(6, 66, 14, 0.493);
+}
+.apply{
+    margin-left: 300px;
+    height: auto;
+    margin-top: -680px;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 520px;
+    padding: 20px;
+}
+.apply p{
+    color:  rgb(9, 1, 19);
+}
+textarea{
+    width: 500px;
+}
+.apply h1{
+    color:  rgb(9, 1, 19);
+}
+
+.apply input  {
+  align-items:flex-end;
+    width: 490px;
+    text-decoration: center;
+    padding: 5px;
+    margin: 2px;
+    /* border: 1px solid rgb(22, 94, 8); */
+    
+}
+.apply input[type='submit']  {
+      width: 502px;      
+      height: 40px;
+      color: white;
+      background-color:  rgb(9, 1, 19);
+      border:  rgb(9, 1, 19) ;
+}
+.track{
+    margin-left: 200px;
+    height: auto;
+    margin-top: -690px;
+    align-items: center;
+    /* background-color: whitesmoke; */
+    padding: 20px;
+}  
+.track table{
+    margin: 50px auto;
+    min-width:400px;
+    width: 90%; 
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.15); */
+}
+.track tr{
+    background-color: rgb(9, 1, 19);
+     border-radius: 5px 5px 0 0;
+     overflow: hidden;  
+     color: #ffffff;
+     text-align: left;
+     font-weight: bold;
+}
