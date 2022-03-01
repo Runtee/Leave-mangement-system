@@ -22,11 +22,12 @@ height: 100px;
 }
 .signinbox{
     width: 320px;
-    height: 420px;
+    height: 380px;
     border-radius: 5px;
     background-color: rgba(5, 49, 1, 0.377);
     ;
-    margin: 100px;
+    /* margin: 100px; */
+    margin-top: 5px;
     margin-left: 500px;
     border: 2px solid rgb(22, 94, 8);
     padding: 10px;
@@ -59,12 +60,9 @@ font-weight:normal;
 
 }
 .signinbox select{
-    width: 100%;
-    padding: 8px;
-    height: 20px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 2px;
+    width: 97.5%;
+    margin-top: 20px;
+    padding: 7px;
     }
 .signinbox input{
 width: 92%;
@@ -103,4 +101,59 @@ text-decoration: none;
 color:rgb(22, 94, 8);
 font-weight:normal;
 
+}
+.danger{
+width: 300px;
+color: rgb(255, 10, 10);
+
+margin-left: 550px;
+}
+.danger a{
+    text-align: center;
+    color: rgb(184, 7, 7);
+
+}
+
+.register{
+    width: 100%;
+    border-radius: 5px;
+    /* background-color: rgba(5, 49, 1, 0.377); */
+    height: 100%;
+    /* margin: 100px; */
+    /* margin-top: 5px; */
+    /* margin-left: 10px; */
+    /* border: 2px solid rgb(22, 94, 8); */
+    padding: 10px;
+    font-size: medium;
+}
+.register form{
+    padding-left: 40px;
+}
+
+.register select{
+    width: 51%;
+    padding: 8px;
+    /* height: 15px; */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    border-radius: 2px;
+    margin-top:5px ;
+    margin-bottom:5px ;
+    }
+.register input{
+width: 50%;
+border: 1px solid rgb(1, 31, 1);
+padding: 7px;
+height: 15px;
+margin-top:5px ;
+margin-bottom:5px ;
+}
+
+.register input[type='submit']{
+    width: 35%;
+    padding: 8px;
+    height: 30px;
+    margin-left: 80px;
+    background-color: rgb(22, 94, 8);
+    border: rgb(22, 94, 8)
 }

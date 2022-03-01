@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/sign.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/home.css">
+
+    <title>Document</title>
+</head>
+<body style="background-image :url(/public/img/tamarcus.jpg)">
+    <div class='headers'>
+        <header>
+            <img src='/public/img/school_logo.gif'>
+            <p>Universty of Nigeria Nsukka</p>
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="danger">
+        <% if(errors !=null && errors.length> 0){ %>
+
+            <% for (var i=0; i < errors.length; i++) { %>
+            <%= errors[i] %>
+            <% } %> <% } %> 
+    </div>
+
+    <div class="register">
+        <h2>Please fill in the form</h2>
+        <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <div>
+
+                <label for="name">First Name</label>
+                <br>
+                <input type="text" id="name" name='firstName' value="<%=firstName%>" required> 
+            </div>
+            <div>
+                <label for="Middle">Middle Name</label><br>
+                <input type="text" id="Middle " name="middleName" value="<%=middleName%>" required>
+            </div>
+            <div>
+                <label for="Surname">Surname</label><br>
+                <input type="text" id="Surname" name='surName' value="<%=surName%>" required>
+            </div>
+            <div>
+                <label for="Email">Email</label><br>
+                <input type="email" name="email" id="email" value="<%=email%>" required>
+            </div>
+            <div>
+            <div>
+                <label for="Department">Department</label><br>
+                <input type="text" id="Department" name='department' value="<%=department%>" required>
+            </div>
+
+            <div>
+                <label for="birthdate">Date of Birth</label><br>
+                <input type="date" name="DOB" id="birthdate" value="<%=DOB%>" required> 
+            </div>
+            <div>
+                <label for="sex">Sex</label><br>
+                <select name="sex" id="sex" required placeholder="Select Sex" aria-valuenow="<%=DOB%>"> 
+                    <option></option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    
+                </select>
+            </div>
+            <div>
+                <label for="phone number">Phone Number</label><br>
+                <input type="tel" id="phone number" name="phone" value="<%=phone%>" required>
+            </div>
+            <div>
+                <label for="state">State of origin</label><br>
+                <select name="state" id="state" required>
+                    <option value="abia">Abia</option>
+                    <option value="adamawa">Adamawa</option>
+                    <option value="akwa-ibom">Akwa-Ibom</option>
+                    <option value="anambra">Anambra</option>
+                    <option value="bauchi">Bauchi</option>
+                    <option value="bayelsa">Bayelsa</option>
+                    <option value="benue">Benue</option>
+                    <option value="borno">Borno</option>
+                    <option value="cross river">Cross River</option>
+                    <option value="delta">Delta</option>
+                    <option value="ebonyi">Ebonyi</option>
+                    <option value="edo">Edo</option>
+                    <option value="ekiti">Ekiti</option>
+                    <option value="enugu">Enugu</option>
+                    <option value="gombe">Gombe</option>
+                    <option value="imo">Imo</option>
+                    <option value="jigawa">Jigawa</option>
+                    <option value="kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="kastina">Kastina</option>
+                    <option value="kebbi">Kebbi</option>
+                    <option value="kogi">Kogi</option>
+                    <option value="kwara">Kwara</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="nasarawa">Nasarawa</option>
+                    <option value="niger">Niger</option>
+                    <option value="ogun">Ogun</option>
+                    <option value="ondo">Ondo</option>
+                    <option value="osun">Osun</option>
+                    <option value="oyo">Oyo</option>
+                    <option value="plateau">Plateau</option>
+                    <option value="rivers">Rivers</option>
+                    <option value="sokoto">Sokoto</option>
+                    <option value="taraba">Taraba</option>
+                    <option value="yobe">Yobe</option>
+                    <option value="zamfara">Zamfara</option>
+                    <option value="fct">FCT</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Local">Local Government of Origin</label><br>
+                <input type="local" id="local" name="LGA" value="<%=LGA%>" required>
+            </div>
+            <div>
+                <label for="caddress">Contact Address</label><br>
+                <input type="text" id="caddress" name="caddress" value="<%=caddress%>" required>
+
+            </div>
+            <div class="">
+                <label>Passport</label><br>
+                <input type="file"  id="image" name="image">
+            </div>
+<br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

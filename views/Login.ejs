@@ -32,16 +32,27 @@
     <div>
         <h1 style="text-align: center; color: white;">Welcome to the non academic staff portal</h1>
     </div>
+    <div class="danger">
+        <% if(errors !=null && errors.length> 0){ %>
+
+            <% for (var i=0; i < errors.length; i++) { %>
+            <%= errors[i] %>!
+            <% } %> <% } %> 
+    </div>
     <div class="signinbox"  >  
-        <img src='/public/img/school_logo.gif'>
+        <!-- <img src='/public/img/school_logo.gif'> -->
         <p>Universty of Nigeria Nsukka staff portal</p>
 
         
         <h2>Login to your account</h2>
+    
           <form method="post" action="/login/auth">
-                <!-- <p>username</p> -->
+            <select name="option">
+                <option>Staff</option>
+                <option>Supervisor</option>
+                <option>Admin</option>
+            </select>
               <input type="text" placeholder="Enter your username" name="username">
-              <!-- <p>password</p> -->
               <br>
               <input type="password" placeholder="Enter your password" name="password">
               <br>

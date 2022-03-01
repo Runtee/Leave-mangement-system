@@ -7,6 +7,7 @@
     margin-top: -680px;
     background-color: whitesmoke;
     border: 5px solid rgb(219, 213, 202);
+    padding: 5px;
     /* box-sizing: border-box;
     box-shadow: 0 0 1in -0.3in rgba(0, 0, 0, 0.5); */
 
@@ -33,41 +34,11 @@ padding: 5px;
     font-size: 18px;
     font-weight:lighter;
 }
-.profile td input[type='text']  {
+.profile td input  {
     display: inline-block;
   align-items:flex-end;
-    width: 90%;
-    text-decoration: center;
-    padding: 5px;
-    margin: 2px;
-    border: 1px solid  rgb(9, 1, 19);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.profile input[type='email']  {
-    display: inline-block;
-  
-    width: 90%;
-    padding: 5px;
-    margin: 2px;
-    border: 1px solid  rgb(9, 1, 19);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.profile input[type='date']  {
-    display: inline-block;
-  
-    width: 90%;
-    padding: 5px;
-    margin: 2px;
-    border: 1px solid  rgb(9, 1, 19);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.profile input[type='tel']  {
-    display: inline-block;
-  
-    width: 90%;
+    width: 96%;
+    text-decoration: none;
     padding: 5px;
     margin: 2px;
     border: 1px solid  rgb(9, 1, 19);
@@ -75,10 +46,11 @@ padding: 5px;
     box-sizing: border-box;
 }
 
+
 .profile select  {
     display: inline-block;
   
-    width: 90%;
+    width: 98%;
     padding: 5px;
     margin: 2px;
     border: 1px solid  rgb(9, 1, 19);

@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/public/css/Dashboard.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/profile.css">
-
-    <title>Document</title>
-</head>
+<%- include('layouts/head'); -%>
 
 <body>
-
-    <div class='headers'>
-        <header>
-            <img src='/public/img/school_logo.gif'>
-            <p>Universty of Nigeria Nsukka staff portal</p>
-            <div class="name">
-                <img src='/public/img/school_logo.gif'>
-                <p>Jennifer</p>
-
-            </div>
-        </header>
-    </div>
+<%- include('layouts/header'); -%>
+  
     <div class="nav-bar">
         <nav>
             <ul>
                 <li class="currentL">
-                    <a href="profile.html">Profile</a>
+                    <a href="/dashboard/profile">Profile</a>
                 </li>
                 <li>
-                    <a href="apply.html"> Apply For Leave</a>
+                    <a href="/dashboard/apply"> Apply For Leave</a>
                 </li>
                 <li>
-                    <a href="track.html"> Track Leave</a>
+                    <a href="/dashboard/track"> Track Leave</a>
+                </li>
+                <li>
+                    <a href="/dashboard/change-password">Change Password</a>
                 </li>
                 <li>
 
 
-                    <a href="/home.html"> Log out</a>
+                    <a href="/logout"> Log out</a>
                 </li>
             </ul>
         </nav>
@@ -57,38 +42,35 @@
                                 <label for="fname">First Name</label>
                             </td>
                             <td>
-                                <input type="text" id="fname" name="firstName" readonly value="">
+                                <input type="text" id="fname" name="firstName" readonly value="<%=staffInfo[0].firstName %>">
                             </td>
-                        </tr>
-                        <tr>
+                       
                             <td>
                                 <label for="mname">Middle Name</label>
                             </td>
                             <td>
-                                <input type="text" id="mname" name="middleName" readonly value="">
-                            </td>
-                        </tr>
+                                <input type="text" id="mname" name="middleName" readonly value="<%=staffInfo[0].middleName %>">
+                            </td>                        </tr>
+                       
                         <tr>
                             <p>
                                 <td>
                                     <label for="text">Surname</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="sname" name="surName" readonly>
+                                    <input type="text" id="sname" name="surName" value="<%=staffInfo[0].surName %>">
                                 </td>
                             </p>
-
-                        </tr>
-                        <tr>
                             <p>
                                 <td>
                                     <label for="email">Email</label>
                                 </td>
                                 <td>
-                                    <input type="email" name="email" id="email" value="" readonly>
+                                    <input type="email" name="email" id="email" value="<%=staffInfo[0].email%>" readonly>
                                 </td>
                             </p>
                         </tr>
+                        
 
                         <tr>
                             <p>
@@ -96,81 +78,64 @@
                                     <label for="date">Date of Birth</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="DOB" id="DOB" value="" readonly>
+                                    <input type="text" name="DOB" id="DOB" value="<%=staffInfo[0].DOB %>" readonly>
                                 </td>
                             </p>
-
-                        </tr>
-                        <tr>
-
                             <p>
                                 <td>
                                     <label for="sex">Sex</label>
                                 </td>
                                 <td>
-                                    <select name="sex" id="sex">
-                                        <option>
-
-                                        </option>
-                                        <option>
-                                            Male
-                                        </option>
-                                        <option>
-                                            Female
-                                        </option>
-                                    </select>
+                                    <input type="text" name="sex" id="sex" value="<%=staffInfo[0].sex %>">
                                 </td>
                             </p>
                         </tr>
+                        
                         <tr>
                             <p>
                                 <td>
                                     <label for="tel">Phone number</label>
                                 </td>
                                 <td>
-                                    <input type="tel" id="phone number" name="phone" value="" readonly>
+                                    <input type="tel" id="phone number" name="phone" value="<%=staffInfo[0].phone %>" >
                                 </td>
                             </p>
-                        </tr>
-                        <tr>
                             <p>
                                 <td>
                                     <label for="origin">State of Origin</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="state">
+                                    <input type="text" name="state" value="<%=staffInfo[0].state %>">
                                 </td>
                             </p>
-
                         </tr>
+                        
                         <tr>
                             <p>
                                 <td>
                                     <label for="Local">Local Government of Origin</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="local" name="LGA" value="" readonly>
+                                    <input type="text" id="local" name="LGA" value="<%=staffInfo[0].LGA %>" readonly>
                                 </td>
                             </p>
-                        </tr>
-                        <tr>
                             <p>
                                 <td>
                                     <label for="caddress">Contact Address</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="caddress" name="caddress">
+                                    <input type="text" id="caddress" name="caddress" value="<%=staffInfo[0].caddress %>">
                                 </td>
                             </p>
-
                         </tr>
+                  
                         <tr>
                             <p>
                                 <td>
                                     <label for="department">Department</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="department" name="department">
+                                    <input type="text" id="department" name="department" value='<%=staffInfo[0].department %>'>
                                 </td>
                             </p>
 
@@ -181,7 +146,7 @@
             </div>
 
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Update">
         </form>
     </div>
 

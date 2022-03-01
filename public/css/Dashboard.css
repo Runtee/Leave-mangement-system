@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family:'DejaVu Sans Condensed';
-font-size: 20px;
+font-size: 18px;
 /* font-weight:bolder; */
 width: 100%;
 
@@ -45,7 +45,6 @@ font-weight:bolder;
     width: 250px;
     background-color: rgb(57, 150, 39) ;
     margin-top: -21px;
-    padding: relative;
 }
 .nav-bar a{
  text-decoration: none;
@@ -69,10 +68,10 @@ border-bottom: 2px solid white;
 }
 .name img{
 float: left;
-width: 50px;
+width: 60px;
 height: 60px;
 border-radius: 30px;
-margin-left: 1100px;
+margin-left: 1095px;
 margin-top: -80px;
 position: absolute;
 }
@@ -91,13 +90,15 @@ position: absolute;
     background-color: rgba(6, 66, 14, 0.493);
 }
 .apply{
-    margin-left: 300px;
+    margin-left: 400px;
     height: auto;
     margin-top: -680px;
     align-items: center;
     background-color: whitesmoke;
     width: 520px;
     padding: 20px;
+    border: 5px solid rgb(219, 213, 202);
+
 }
 .apply p{
     color:  rgb(9, 1, 19);
@@ -112,7 +113,7 @@ textarea{
 .apply input  {
   align-items:flex-end;
     width: 490px;
-    text-decoration: center;
+    /* text-align: center; */
     padding: 5px;
     margin: 2px;
     /* border: 1px solid rgb(22, 94, 8); */
@@ -125,25 +126,205 @@ textarea{
       background-color:  rgb(9, 1, 19);
       border:  rgb(9, 1, 19) ;
 }
+.apply select, option{
+    color: rgb(9, 1, 19);
+    background-color: rgb(255, 255, 255);
+    width: 509px;      
+      height: 35px;
+      border: 1px solid rgb(9, 1, 19) ;
+    font-size: 16px;
+}
 .track{
-    margin-left: 200px;
+    margin-left: 250px;
     height: auto;
     margin-top: -690px;
     align-items: center;
     /* background-color: whitesmoke; */
     padding: 20px;
 }  
+.track th{
+    background-color: rgb(9, 1, 19);;
+    border-right:2px solid rgb(9,1,19) ;
+    margin: 5px;
+    color:white;
+    padding: 5px;
+
+}
 .track table{
-    margin: 50px auto;
+    border: 2px solid rgb(9,1,19);
+
+    border-collapse: collapse;
+    /* margin: 50px auto; */
+    margin-right: 0;
+    margin-bottom: 20px;
     min-width:400px;
-    width: 90%; 
+    width: 95% 
     /* box-shadow: 0 0 20px rgba(0,0,0,0.15); */
 }
+.track td{
+    border-right:2px solid rgb(9,1,19) ;
+padding: 5px;
+}
 .track tr{
-    background-color: rgb(9, 1, 19);
+    background-color: rgb(74, 55, 85);
      border-radius: 5px 5px 0 0;
      overflow: hidden;  
      color: #ffffff;
      text-align: left;
      font-weight: bold;
+}
+.track tr:nth-child(odd){
+    color: rgb(18, 2, 27);
+    background-color: #ffffff;
+    border-right:1px solid rgb(18, 2, 27) ;
+}
+    
+.notAllowed{
+background-color: rgb(185, 0, 31);
+color: white;
+height: 50px;
+margin-left: 400px;
+margin-top: -690px;
+position: absolute;
+padding: 5px;
+width: max-content;
+}
+.track table caption{
+font-size: x-large;
+font-weight: bold;
+}
+.allowed{
+    background-color: rgb(13, 53, 6);
+    color: white;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: -690px;
+    position: absolute;
+    padding: 5px;
+    width: max-content;
+
+}
+.td_name{
+    width: 200px;
+}
+.track select{
+height: 30px;
+font-family:'DejaVu Sans Condensed';
+font-size: 18px;
+color: white;
+background-color: rgb(53, 52, 95);
+width: 100%;
+border: none;
+}
+.track input[type='submit']{
+    background-color: rgb(9, 1, 19);;
+    color: white;
+    height: 50px;
+    margin-left: 500px;
+    margin-top: -100px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+   
+}
+.welcome{
+    margin-left: 400px;
+    margin-top: -690px;
+    color: rgb(13, 68, 13);  
+    font-size: 22px; 
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 200px;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 170px;
+}
+.dropdown-content li {
+border: none
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.currentL{
+    display: block;
 }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/head'); -%>
+<title>Supervisor</title>
+<body>
+
+    <%- include('layouts/header'); -%>
+
+      <div class="nav-bar">
+        <nav>
+            <ul>
+                <li class="currentL">
+                    <a href="/supervisor/profile">Profile</a>
+                </li>
+                <li class="">
+                    <a href="/supervisor/pending">Pendding</a>
+                </li>
+                <li>
+                    <a href="/supervisor/approved"> Approved</a>
+                </li>
+                <li>
+                    <a href="/supervisor/change-password"> Change password</a>
+                </li>
+                <li>
+
+                    
+                    <a href="/logout"> Log out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="profile">
+            <div class="h">
+                <h1 class="heading">Supervisor Profile</h1>
+            </div>
+            <div class="line">
+                <table>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="fname">First Name</label>
+                            </td>
+                            <td>
+                                <input type="text" id="fname" name="firstName" readonly value="<%=staffInfo[0].firstName %>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mname">Middle Name</label>
+                            </td>
+                            <td>
+                                <input type="text" id="mname" name="middleName" readonly value="<%=staffInfo[0].middleName %>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="text">Surname</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="sname" name="surName" value="<%=staffInfo[0].surName %>">
+                                </td>
+                            </p>
+
+                        </tr>
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="email">Email</label>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" id="email" value="<%=staffInfo[0].email%>" readonly>
+                                </td>
+                            </p>
+                        </tr>
+
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="date">Date of Birth</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="DOB" id="DOB" value="<%=staffInfo[0].DOB %>" readonly>
+                                </td>
+                            </p>
+
+                        </tr>
+                        <tr>
+
+                            <p>
+                                <td>
+                                    <label for="sex">Sex</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="sex" id="sex" value="<%=staffInfo[0].sex %>">
+                                </td>
+                            </p>
+                        </tr>
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="tel">Phone number</label>
+                                </td>
+                                <td>
+                                    <input type="tel" id="phone number" name="phone" value="<%=staffInfo[0].phone %>" >
+                                </td>
+                            </p>
+                        </tr>
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="origin">State of Origin</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="state" value="<%=staffInfo[0].state %>">
+                                </td>
+                            </p>
+
+                        </tr>
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="Local">Local Government of Origin</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="local" name="LGA" value="<%=staffInfo[0].LGA %>" readonly>
+                                </td>
+                            </p>
+                        </tr>
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="caddress">Contact Address</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="caddress" name="caddress" value="<%=staffInfo[0].caddress %>">
+                                </td>
+                            </p>
+
+                        </tr>
+                        <tr>
+                            <p>
+                                <td>
+                                    <label for="department">Department</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="department" name="department" value='<%=staffInfo[0].department %>'>
+                                </td>
+                            </p>
+
+                        </tr>
+                </table>
+
+
+            </div>
+
+    </div>
+
+</body>
+
+</html>

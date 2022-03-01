@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/head'); -%>
+<body>
+
+    <div class='headers'>
+        <header>
+          <img src='/public/img/school_logo.gif'>
+          <p>Universty of Nigeria Nsukka staff portal</p>
+          <div class="name">
+            <p>Admin</p>
+    
+          </div>
+        </header>
+    </div>
+    <div class="nav-bar">
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Accounts</a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="/admin/staff"> Staff</a>
+                        </li>
+                        <li>
+                            <a href="/admin/supervisor">Supervisor</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="/admin/change-password">Change Password</a>
+                </li>
+                <li>
+
+                    
+                    <a href="/logout"> Log out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="welcome">
+    <h2> Welcome!</h2></div>
+</body>
+</html>
