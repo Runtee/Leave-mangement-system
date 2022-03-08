@@ -27,7 +27,7 @@ mongoose.connect('mongodb+srv://runtee:'+process.env.PASSWORD+'@cluster0.wvqt2.m
 
 app.set('view engine', 'ejs')
 app.use("/public", express.static(path.join(__dirname, 'public')))
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('App listening on port 3000')
 })
 app.use(expressSession({
