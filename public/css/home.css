@@ -9,7 +9,7 @@ width: 100%;}
 .headers{
     height: 100px;
     border-bottom: 2px solid rgb(237, 245, 244);
-    background-color:rgb(22, 94, 8)    ;
+    background-color:rgb(23, 2, 48)    ;
     padding: 10px;
 
 }
@@ -32,7 +32,7 @@ font-size: 28px;
 font-weight:bolder;
 }
 .headers h3{
-    color:rgb(22, 94, 8);
+    color:rgb(9, 1, 19);
     text-align: center;
 }
 .headers ul, li{
@@ -48,12 +48,12 @@ float: right;
 }
 
 .headers li:hover{
-    background-color: green;
+    background-color: rgb(59, 3, 83);
     color:rgb(255, 255, 255);
     border: 2px solid white;
     } 
 .headers li a:hover{
-background-color: green;
+background-color: rgb(50, 11, 99);
 color:rgb(255, 255, 255);
 }
 

@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const app = new express()
 const path = require('path')
@@ -10,8 +11,19 @@ app.use(express.urlencoded())
 const mongoose = require('mongoose')
 const fileUpload = require('express-fileupload')
 app.use(fileUpload())
-mongoose.connect('mongodb://localhost/leave', { useNewUrlParser: true, useUnifiedTopology: true });
+console.log(process.env.PASSWORD);
+// mongodb+srv://runtee:<password>@cluster0.wvqt2.mongodb.net/test
+mongoose.connect('mongodb+srv://runtee:'+process.env.PASSWORD+'@cluster0.wvqt2.mongodb.net/Leave',
+ { useNewUrlParser: true, useUnifiedTopology: true },(err,db)=>{
+  if (db){
+  
+    console.log('database connected successfully')
 
+  }
+  if (err){
+      console.log(err);
+  }
+});
 
 app.set('view engine', 'ejs')
 app.use("/public", express.static(path.join(__dirname, 'public')))

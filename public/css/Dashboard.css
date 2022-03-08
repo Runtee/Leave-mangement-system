@@ -29,7 +29,7 @@ width: 100%;
 }
 
 .headers p{
-color: rgb(22, 94, 8);
+color: rgb(9, 1, 19);
 margin-left: 90px;
 font-family:'DejaVu Sans Condensed';
 font-size: 30px;
@@ -45,7 +45,7 @@ font-weight:bolder;
 .nav-bar{
     height: 700px;
     width: 250px;
-    background-color: rgb(57, 150, 39) ;
+    background-color: rgb(28, 8, 53) ;
     margin-top: -21px;
 }
 .nav-bar a{
@@ -118,7 +118,7 @@ textarea{
     /* text-align: center; */
     padding: 5px;
     margin: 2px;
-    /* border: 1px solid rgb(22, 94, 8); */
+    /* border: 1px solid rgb(9, 1, 19); */
     
 }
 .apply input[type='submit']  {
@@ -233,7 +233,7 @@ border: none;
 .welcome{
     margin-left: 400px;
     margin-top: -690px;
-    color: rgb(13, 68, 13);  
+    color: rgb(9, 1, 19);  
     font-size: 22px; 
 }
 
@@ -268,7 +268,7 @@ border: none;
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #320646;
     color: white;
 }
 
@@ -278,7 +278,7 @@ border: none;
 /* Modal Footer */
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #240442;
     color: white;
 }
 

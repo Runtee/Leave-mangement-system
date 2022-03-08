@@ -11,7 +11,7 @@ body{
     /* background-color: rgb(223, 171, 103); */
 }
 h1{
-    color:rgb(22, 94, 8);
+    color:rgb(9, 1, 19);
     /* font-size: 20px; */
 
 }
@@ -24,12 +24,12 @@ height: 100px;
     width: 320px;
     height: 380px;
     border-radius: 5px;
-    background-color: rgba(5, 49, 1, 0.377);
+    background-color: rgba(49, 1, 49, 0.377);
     ;
     /* margin: 100px; */
     margin-top: 5px;
     margin-left: 500px;
-    border: 2px solid rgb(22, 94, 8);
+    border: 2px solid rgb(9, 1, 19);
     padding: 10px;
 }
 .signinbox form{
@@ -43,7 +43,7 @@ height: 100px;
 .he{
     margin-top: -70px;
     margin-left: 90px;
-    color:rgb(22, 94, 8);
+    color:rgb(9, 1, 19);
 
 /* font-family:'Dyuthi'; */
 font-size: 20px;
@@ -72,8 +72,8 @@ padding: 7px;
 .signinbox input[type='submit']{
     width: 97.2%;
     padding: 8px;
-    background-color: rgb(22, 94, 8);
-    border: rgb(22, 94, 8)
+    background-color: rgb(9, 1, 19);
+    border: rgb(9, 1, 19)
 }
 .signinbox p{
 font-weight: 500;
@@ -86,7 +86,7 @@ font-size: 18px;
 }
 .mod a{
     text-align: center;
-    color: rgb(64, 241, 28);
+    color: rgb(36, 3, 63);
     font-weight:normal;
 
 }
@@ -98,7 +98,7 @@ font-size: 18px;
 }
 .forget a{
 text-decoration: none;
-color:rgb(22, 94, 8);
+color:rgb(9, 1, 19);
 font-weight:normal;
 
 }
@@ -122,7 +122,7 @@ margin-left: 550px;
     /* margin: 100px; */
     /* margin-top: 5px; */
     /* margin-left: 10px; */
-    /* border: 2px solid rgb(22, 94, 8); */
+    /* border: 2px solid rgb(9, 1, 19); */
     padding: 10px;
     font-size: medium;
 }
@@ -142,7 +142,7 @@ margin-left: 550px;
     }
 .register input{
 width: 50%;
-border: 1px solid rgb(1, 31, 1);
+border: 1px solid rgb(52, 4, 65);
 padding: 7px;
 height: 15px;
 margin-top:5px ;
@@ -154,6 +154,7 @@ margin-bottom:5px ;
     padding: 8px;
     height: 30px;
     margin-left: 80px;
-    background-color: rgb(22, 94, 8);
-    border: rgb(22, 94, 8)
+    color: white;
+    background-color: rgb(9, 1, 19);
+    border: rgb(9, 1, 19)
 }
