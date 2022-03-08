@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": "16.14"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-flash": "^0.1.1",
