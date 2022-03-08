@@ -1,4 +1,5 @@
 require('dotenv').config()
+const cool = require('cool-ascii-faces');
 const express = require('express')
 const app = new express()
 const path = require('path')
@@ -120,4 +121,6 @@ app.get('/admin/supervisor',authMiddlewareAdmin,deleteSupervisor)
 app.post('/delete/supervisor',authMiddlewareAdmin,deleteSupervisorPost)
 app.get('/admin/change-password',authMiddlewareAdmin, passwordControllerAdim)
 app.post('/admin/change-password/store',authMiddlewareAdmin,passwordCAdim)
+
+app.get('/cool', (req, res) => res.send(cool()))
 app.get('/logout',logoutController)
