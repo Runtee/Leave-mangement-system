@@ -13,31 +13,34 @@
           </div>
         </header>
     </div>
-    <div class="nav-bar">
-        <nav>
-          <ul>
-            <li class="dropdown">
-                <a href="#">Accounts</a>
-                <ul class="dropdown-content" style="display: block;">
-                    <li class="currentL">
-                        <a href="/admin/staff"> Staff</a>
-                    </li>
-                    <li>
-                        <a href="/admin/supervisor">Supervisor</a>
-                    </li>
-                </ul>
-            </li>
+    
+    <div class="container-xxl">
+      <nav>
+        <ul>
+          <li class="dropdown">
+              <a href="#">Accounts</a>
+              <ul class="dropdown-content" style="display: block;">
+                  <li class="currentL">
+                      <a href="/admin/staff"> Staff</a>
+                  </li>
+                  <li>
+                      <a href="/admin/supervisor">Supervisor</a>
+                  </li>
+              </ul>
+          </li>
 
-            <li>
-                <a href="/admin/change-password">Change Password</a>
-            </li>
-            <li>
+          <li>
+              <a href="/admin/change-password">Change Password</a>
+          </li>
+          
+      </ul>
+          <div style="text-align: center; margin:60px; ">
+              <button type="button" class="btn text-white logout" onclick="window.location.href='/logout';">Log
+                  Out</button></div>
 
-                
-                <a href="/logout"> Log out</a>
-            </li>
-        </ul>
-    </div>
+      </nav>
+  </div>
+  
 
 <!-- <% if(success !=null && success.length> 0){ %>
   <div class="allowed">
@@ -100,6 +103,6 @@
     </table>
 </div>
     
-    
+<script src="/public/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

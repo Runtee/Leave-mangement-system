@@ -1,43 +1,44 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu';
+    font-family: sans-serif;
 font-size: 20px;
 font-weight:bolder;
 width: 100%;}
 
-section{
-    padding: 3% 35%;
-
-}
-@media (max-width:1100px) {
-    section{
-        padding: 3% 22%;
-    
-    } 
-}
 .headers{
+    height: 100px;
     border-bottom: 2px solid rgb(237, 245, 244);
     background-color:rgb(23, 2, 48)    ;
-    padding: 1% 5% ;
+    padding: 10px;
 
 }
 .headers img{
     padding: 0%;
     margin: 0%;
+        margin-top: 0%;
+    margin-top: -44px;
     width: 101px;
-    /* position: absolute; */
+    position: absolute;
     height: 104px;
 
 }
 
 .headers p{
-
+color: rgb(255, 255, 255);
+margin-left: 90px;
+font-family:'sans-serif';
 font-size: 28px;
+font-weight:bolder;
 }
 .headers h3{
     color:rgb(9, 1, 19);
     text-align: center;
+}
+.headers ul, li{
+list-style: none;
+display: block;
+float: right;
 }
 .headers li a{
     color:rgb(255, 255, 255);
@@ -56,6 +57,19 @@ background-color: rgb(50, 11, 99);
 color:rgb(255, 255, 255);
 }
 
+.headers li{
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    /* background-color: rgb(255, 255, 255) ; */
+}
+
+.headers ul{
+    margin-top: -62px;
+    /* margin-right: 100px; */
+
+}
 .sect{
     background-image: url('/img/fusion-medical-animation-rnr8D3FNUNY-unsplash.jpg');
     height:400px;

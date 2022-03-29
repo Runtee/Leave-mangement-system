@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('layouts/head'); -%>
-<body>
 
-<%- include('layouts/header'); -%>
-    <div class="nav-bar">
-        <nav>
-            <ul>
-                <li>
-                    <a href="/dashboard/profile">Profile</a>
-                </li>
-                <li>
-                    <a href="/dashboard/apply"> Apply For Leave</a>
-                </li>
-                <li>
-                    <a href="/dashboard/track"> Track Leave</a>
-                </li>
-                <li>
-                    <a href="/dashboard/change-password">Change Password</a>
-                </li>
-                <li>
+    <body>
 
-                    
-                    <a href="/logout"> Log out</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="welcome">
-    <h2> Welcome <%= staffInfo[0].firstName %>!</h2></div>
-</body>
+        <%- include('layouts/header'); -%>
+<div class="container-xxl">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/dashboard/profile">Profile</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard/apply"> Apply For Leave</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard/track"> Track Leave</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard/change-password">Change Password</a>
+                    </li>
+                </ul>
+                <div style="text-align: center; margin:60px; ">
+                    <button type="button" class="btn text-white logout" onclick="window.location.href='/logout';">Log
+                        Out</button></div>
+
+            </nav>
+        </div>
+            <div class="welcome">
+                <h2> Welcome <%= staffInfo[0].firstName %>!</h2>
+            </div>
+            <script src="/public/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
 </html>

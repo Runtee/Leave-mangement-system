@@ -14,17 +14,24 @@ const fileUpload = require('express-fileupload')
 app.use(fileUpload())
 console.log(process.env.PASSWORD);
 // mongodb+srv://runtee:<password>@cluster0.wvqt2.mongodb.net/test
-mongoose.connect('mongodb+srv://runtee:'+process.env.PASSWORD+'@cluster0.wvqt2.mongodb.net/Leave',
+// mongoose.connect('mongodb+srv://runtee:'+process.env.PASSWORD+'@cluster0.wvqt2.mongodb.net/Leave',
+//  { useNewUrlParser: true, useUnifiedTopology: true },(err,db)=>{
+//   if (db){
+//     console.log('database connected successfully')
+//   }
+//   if (err){
+//       console.log(err);
+//   }
+// });
+
+mongoose.connect('mongodb://localhost:27017/leave',
  { useNewUrlParser: true, useUnifiedTopology: true },(err,db)=>{
   if (db){
   
     console.log('database connected successfully')
-
-  }
-  if (err){
-      console.log(err);
   }
 });
+
 
 app.set('view engine', 'ejs')
 app.use("/public", express.static(path.join(__dirname, 'public')))
@@ -121,6 +128,20 @@ app.get('/admin/supervisor',authMiddlewareAdmin,deleteSupervisor)
 app.post('/delete/supervisor',authMiddlewareAdmin,deleteSupervisorPost)
 app.get('/admin/change-password',authMiddlewareAdmin, passwordControllerAdim)
 app.post('/admin/change-password/store',authMiddlewareAdmin,passwordCAdim)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.get('/cool', (req, res) => res.send(cool()))
 app.get('/logout',logoutController)

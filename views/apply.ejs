@@ -4,29 +4,28 @@
 
   <%- include('layouts/header'); -%>
    
-  <div class="nav-bar">
+  <div class="container-xxl">
     <nav>
-      <ul>
-        <li>
-          <a href="/dashboard/profile">Profile</a>
-        </li>
-        <li class="currentL">
-          <a href="/dashboard/apply"> Apply For Leave</a>
-        </li>
-        <li>
-          <a href="/dashboard/track"> Track Leave</a>
-        </li>
-        <li>
-          <a href="/dashboard/change-password">Change Password</a>
-      </li>
-        <li>
+        <ul>
+            <li>
+                <a href="/dashboard/profile">Profile</a>
+            </li>
+            <li class="currentL">
+                <a href="/dashboard/apply"> Apply For Leave</a>
+            </li>
+            <li>
+                <a href="/dashboard/track"> Track Leave</a>
+            </li>
+            <li>
+                <a href="/dashboard/change-password">Change Password</a>
+            </li>
+        </ul>
+        <div style="text-align: center; margin:60px; ">
+            <button type="button" class="btn text-white logout" onclick="window.location.href='/logout';">Log
+                Out</button></div>
 
-
-          <a href="/logout"> Log out</a>
-        </li>
-      </ul>
     </nav>
-  </div>
+</div>
   <% if(errors !=null && errors.length> 0){ %>
   <div class="notAllowed">
     <% for (var i=0; i < errors.length; i++) { %>
@@ -70,7 +69,7 @@
     </form>
 
   </div>
-
+  <script src="/public/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

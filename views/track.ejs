@@ -3,61 +3,77 @@
 
 <%- include('layouts/head'); -%>
 
-<body>
-<%- include('layouts/header'); -%>
- 
-    <div class="nav-bar">
+  <body>
+    <%- include('layouts/header'); -%>
+
+      <div class="">
         <nav>
-            <ul>
-                <li>
-                    <a href="/dashboard/profile">Profile</a>
-                </li>
-                <li>
-                    <a href="/dashboard/apply"> Apply For Leave</a>
-                </li>
-                <li class="currentL">
-                    <a href="/dashboard/track"> Track Leave</a>
-                </li>
-                <li>
-                  <a href="/dashboard/change-password">Change Password</a>
-              </li>
-                <li>
-                    <a href="/logout"> Log out</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="/dashboard/profile">Profile</a>
+            </li>
+            <li>
+              <a href="/dashboard/apply"> Apply For Leave</a>
+            </li>
+            <li class="currentL">
+              <a href="/dashboard/track"> Track Leave</a>
+            </li>
+            <li>
+              <a href="/dashboard/change-password">Change Password</a>
+            </li>
+
+          </ul>
+          <div style="text-align: center; margin:60px; ">
+            <button type="button" class="btn text-white logout" onclick="window.location.href='/logout';">Log
+              Out</button>
+          </div>
         </nav>
-    </div>
-<div class="track">
-    <table class="content-table">
-      <tr>
-        <th>
-          Reason
-        </th>
-        <th>
-          From
-        </th>
-        <th>To</th>
-        <th>Days</th>
-        <th>Status</th>
-        
-      </tr>
-      <% if(track !=null && track.length> 0){ %>
+      </div>
+      <div class="track">
+        <table class="content-table">
+          <tr>
+            <th>
+              Reason
+            </th>
+            <th>
+              From
+            </th>
+            <th>To</th>
+            <th>Days</th>
+            <th>Status</th>
 
-        <% for (var i=0; i < track.length; i++) { %>
-        
-        
-      <tr>
-        <td><%= track[i].reason %></td>
-        <td><%= track[i].leave_from.getDate() %>/<%= track[i].leave_from.getMonth()+1 %>/<%= track[i].leave_from.getFullYear() %></td>
-        <td><%= track[i].leave_to.getDate() %>/<%= track[i].leave_to.getMonth()+1 %>/<%= track[i].leave_to.getFullYear() %></td>
-        <td><%= Math.ceil((track[i].leave_to - track[i].leave_from)/ (1000 * 60 * 60 * 24)) %></td>
-        <td><%= track[i].status %></td>
-      </tr>
-      <% } %> <% } %> 
-      
-    </table>
-</div>
+          </tr>
+          <% if(track !=null && track.length> 0){ %>
 
-</body>
+            <% for (var i=0; i < track.length; i++) { %>
+
+
+              <tr>
+                <td>
+                  <%= track[i].reason %>
+                </td>
+                <td>
+                  <%= track[i].leave_from.getDate() %>/<%= track[i].leave_from.getMonth()+1 %>/<%=
+                        track[i].leave_from.getFullYear() %>
+                </td>
+                <td>
+                  <%= track[i].leave_to.getDate() %>/<%= track[i].leave_to.getMonth()+1 %>/<%=
+                        track[i].leave_to.getFullYear() %>
+                </td>
+                <td>
+                  <%= Math.ceil((track[i].leave_to - track[i].leave_from)/ (1000 * 60 * 60 * 24)) %>
+                </td>
+                <td>
+                  <%= track[i].status %>
+                </td>
+              </tr>
+              <% } %>
+                <% } %>
+
+        </table>
+      </div>
+      <script src="/public/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 
 </html>
