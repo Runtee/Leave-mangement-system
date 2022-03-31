@@ -3,153 +3,149 @@
 
 <%- include('layouts/head'); -%>
 
-<body>
-<%- include('layouts/header'); -%>
-  
-    <div class="">
-        <nav>
-            <ul>
-                <li class="currentL">
-                    <a href="/dashboard/profile">Profile</a>
-                </li>
-                <li>
-                    <a href="/dashboard/apply"> Apply For Leave</a>
-                </li>
-                <li>
-                    <a href="/dashboard/track"> Track Leave</a>
-                </li>
-                <li>
-                    <a href="/dashboard/change-password">Change Password</a>
-                </li>
-              
-            </ul>
-            <div style="text-align: center; margin:60px; ">
-                <button type="button" class="btn text-white logout" onclick="window.location.href='/logout';">Log
-                    Out</button></div>
-        </nav>
-    </div>
-    <div class="profile">
-        <form action="/profilePost" method="POST">
-            <div class="h">
-                <h1 class="heading">Staff Profile</h1>
+    <body>
+
+        <%- include('layouts/header'); -%>
+
+            <div class="">
+                <nav>
+                    <ul>
+                        <li class="currentL">
+                            <a href="/dashboard/profile">Profile</a>
+                        </li>
+                        <li>
+                            <a href="/dashboard/apply"> Apply For Leave</a>
+                        </li>
+                        <li>
+                            <a href="/dashboard/track"> Track Leave</a>
+                        </li>
+                        <li>
+                            <a href="/dashboard/change-password">Change Password</a>
+                        </li>
+
+                    </ul>
+                    <div style="text-align: center; margin:60px; ">
+                        <button type="button" class="btn text-white logout"
+                            onclick="window.location.href='/logout';">Log
+                            Out</button>
+                    </div>
+                </nav>
             </div>
-            <div class="line">
-                <table>
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="fname">First Name</label>
-                            </td>
-                            <td>
-                                <input type="text" id="fname" name="firstName" readonly value="<%=staffInfo[0].firstName %>">
-                            </td>
-                       
-                            <td>
-                                <label for="mname">Middle Name</label>
-                            </td>
-                            <td>
-                                <input type="text" id="mname" name="middleName" readonly value="<%=staffInfo[0].middleName %>">
-                            </td>                        </tr>
-                       
-                        <tr>
-                            <p>
-                                <td>
+            <section class="section2">
+                <div class="profile">
+                    <form action="/profilePost" method="POST">
+                        <div class="h">
+                            <h1 class="heading">Staff Profile</h1>
+                        </div>
+                        <div class="line">
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <input type="text" id="fname" name="firstName" readonly
+                                        value="<%=staffInfo[0].firstName %>">
+
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <label for="mname">Middle Name</label>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <input type="text" id="mname" name="middleName" readonly
+                                        value="<%=staffInfo[0].middleName %>">
+
+                                </div>
+
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-3 col-6">
                                     <label for="text">Surname</label>
-                                </td>
-                                <td>
+
+                                </div>
+                                <div class="col-md-3 col-6">
                                     <input type="text" id="sname" name="surName" value="<%=staffInfo[0].surName %>">
-                                </td>
-                            </p>
-                            <p>
-                                <td>
+
+                                </div>
+                                <div class="col-md-3 col-6">
                                     <label for="email">Email</label>
-                                </td>
-                                <td>
-                                    <input type="email" name="email" id="email" value="<%=staffInfo[0].email%>" readonly>
-                                </td>
-                            </p>
-                        </tr>
-                        
 
-                        <tr>
-                            <p>
-                                <td>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <input type="email" name="email" id="email" value="<%=staffInfo[0].email%>"
+                                        readonly>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-6">
                                     <label for="date">Date of Birth</label>
-                                </td>
-                                <td>
+                                </div>
+
+                                <div class="col-md-3 col-6">
                                     <input type="text" name="DOB" id="DOB" value="<%=staffInfo[0].DOB %>" readonly>
-                                </td>
-                            </p>
-                            <p>
-                                <td>
+                                </div>
+
+
+                                <div class="col-md-3 col-6">
                                     <label for="sex">Sex</label>
-                                </td>
-                                <td>
+
+                                </div>
+                                <div class="col-md-3 col-6">
                                     <input type="text" name="sex" id="sex" value="<%=staffInfo[0].sex %>">
-                                </td>
-                            </p>
-                        </tr>
-                        
-                        <tr>
-                            <p>
-                                <td>
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-3 col-6">
                                     <label for="tel">Phone number</label>
-                                </td>
-                                <td>
-                                    <input type="tel" id="phone number" name="phone" value="<%=staffInfo[0].phone %>" >
-                                </td>
-                            </p>
-                            <p>
-                                <td>
+
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <input type="tel" id="phone number" name="phone" value="<%=staffInfo[0].phone %>">
+                                </div>
+                                <div class="col-md-3 col-6">
                                     <label for="origin">State of Origin</label>
-                                </td>
-                                <td>
+
+                                </div>
+                                <div class="col-md-3 col-6">
                                     <input type="text" name="state" value="<%=staffInfo[0].state %>">
-                                </td>
-                            </p>
-                        </tr>
-                        
-                        <tr>
-                            <p>
-                                <td>
-                                    <label for="Local">Local Government of Origin</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="local" name="LGA" value="<%=staffInfo[0].LGA %>" readonly>
-                                </td>
-                            </p>
-                            <p>
-                                <td>
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-3 col-6">
                                     <label for="caddress">Contact Address</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="caddress" name="caddress" value="<%=staffInfo[0].caddress %>">
-                                </td>
-                            </p>
-                        </tr>
-                  
-                        <tr>
-                            <p>
-                                <td>
+
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <input type="text" id="caddress" name="caddress"
+                                        value="<%=staffInfo[0].caddress %>">
+                                </div>
+                                <div class="col-md-3 col-6">
                                     <label for="department">Department</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="department" name="department" value='<%=staffInfo[0].department %>'>
-                                </td>
-                            </p>
 
-                        </tr>
-                </table>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <input type="text" id="department" name="department"
+                                        value="<%=staffInfo[0].department %>">
+                                </div>
 
+                            </div>
+                        </div>
 
-            </div>
+                        <div class="submit">
+                            <input type="submit" value="Update">
+                        </div>
+                    </form>
+                </div>
+            </section>
 
+            <script src="/public/dist/js/bootstrap.bundle.min.js"></script>
 
-            <input type="submit" value="Update">
-        </form>
-    </div>
-    <script src="/public/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    </body>
 
 </html>

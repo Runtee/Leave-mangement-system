@@ -28,6 +28,7 @@
                   Out</button></div>
         </nav>
 </div>
+<section class="section2">
     <% if(success !=null && success.length> 0){ %>
       <div class="allowed">
      
@@ -37,7 +38,7 @@
          
         </div>
         <% } %> <% } %> 
-    <div class="track">
+    <div class="content-table track">
         <form action="/status-update" method="post">
         <table class="">
           <tr>
@@ -83,10 +84,12 @@
           <% } %> <% } %> 
           
         </table>
+        <div class="submit">
         <input type="submit" value="Submit">
+        </div>
     </form>
     </div>
-
+  </section>
     <script src="/public/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
