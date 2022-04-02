@@ -31,18 +31,6 @@ module.exports = async (req, res) => {
                 }
             }
 
-            var number_of_leaves = 0
-
-            for (i = 0; i < allLeaves.length; i++) {
-                if (new Date(leave_from) < allLeaves[i].leave_to) {
-                    number_of_leaves += 1                };
-            }
-            if (number_of_leaves > 2) {
-                req.flash('notAllowed', "Can't grant leave currently. There are alreadly three people on Leave")
-                return res.redirect('/dashboard/apply')
-
-            }
-
             leave.create({ ...req.body, staffid: staffid, userid: userid, department:department }, (err, cr) => {
                 if (!err) {
                 }
