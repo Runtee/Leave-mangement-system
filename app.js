@@ -14,7 +14,7 @@ const fileUpload = require('express-fileupload')
 app.use(fileUpload())
 console.log(process.env.PASSWORD);
 // mongodb+srv://runtee:<password>@cluster0.wvqt2.mongodb.net/test
-mongoose.connect(process.env.MONGO_URI+'leave',
+mongoose.connect(process.env.MONGO_URI+'Leave',
  { useNewUrlParser: true, useUnifiedTopology: true },(err,db)=>{
   if (db){
     console.log('database connected successfully')
